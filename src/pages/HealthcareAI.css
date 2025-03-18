@@ -1,0 +1,30 @@
+.healthcareai-container {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 5rem;
+  }
+  
+  .healthcareai-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .healthcareai-section {
+    margin-top: 2rem;
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .healthcareai-section:hover {
+    background-color: #2d3748;
+  }
+  
+  .healthcareai-section h2 {
+    margin-bottom: 0.5rem;
+  }
+  

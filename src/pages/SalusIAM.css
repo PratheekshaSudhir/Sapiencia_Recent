@@ -1,0 +1,26 @@
+.salusiam-container {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 5rem;
+  }
+  
+  .salusiam-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .salusiam-section {
+    margin-top: 2rem;
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .salusiam-section:hover {
+    transform: scale(1.02);
+  }
+  

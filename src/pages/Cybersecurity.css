@@ -1,0 +1,26 @@
+.cybersecurity-container {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 5rem;
+  }
+  
+  .cybersecurity-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .cybersecurity-section {
+    margin-top: 2rem;
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cybersecurity-section:hover {
+    background-color: #2d3748;
+  }
+  

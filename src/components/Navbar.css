@@ -1,0 +1,59 @@
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(15, 23, 42, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    z-index: 999;
+  }
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between logo and text */
+ }
+
+  .navbar-logo-img {
+    width: 30px; /* Adjust the size of the logo */
+    height: 30px; /* Ensure the logo is square */
+    object-fit: contain; /* Maintain aspect ratio */
+ }
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .navbar-logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar-links li a {
+    color: #cbd5e1;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links li a:hover {
+    color: #fff;
+  }
+  
+  .navbar-cta .cta-button {
+    background-color: #2563eb; /* Blue */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-cta .cta-button:hover {
+    background-color: #1d4ed8; /* Darker blue */
+  }
+  
