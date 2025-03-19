@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className={`navbar ${isHome ? 'fixed-nav' : ''}`}>
       <div className="navbar-logo">
         <a href="/">
-        <img src="sapiencia_ai\src\components\Sapiencia_Logo.png" alt="Logo" class="navbar-logo-img" />
+        <img src="\Sapiencia_Logo.png" alt="Logo" className="navbar-logo-img" />
         Sapiencia AI
         </a>
       </div>

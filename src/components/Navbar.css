@@ -18,6 +18,7 @@
     width: 30px; /* Adjust the size of the logo */
     height: 30px; /* Ensure the logo is square */
     object-fit: contain; /* Maintain aspect ratio */
+    
  }
   .fixed-nav {
     position: fixed;
