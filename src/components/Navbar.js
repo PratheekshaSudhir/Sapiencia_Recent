@@ -20,7 +20,7 @@ const Navbar = () => {
         <li><Link to="/contact">Contact</Link></li>
       </ul>
       <div className="navbar-cta">
-        <Link to="/contact" className="cta-button">Request Demo</Link>
+        <Link to="/contact" className="cta-button-demo">Request Demo</Link>
       </div>
     </nav>
   );
