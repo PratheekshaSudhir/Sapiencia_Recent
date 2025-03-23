@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="navbar-logo">
         <a href="/">
         <img src="\no_backg_logo.jpeg" alt="Logo" className="navbar-logo-img" />
-        Sapiencia.AI
+        <div className='company_name'><p>Sapiencia.AI</p></div>
         </a>
       </div>
       <ul className="navbar-links">

@@ -1,7 +1,7 @@
 .navbar {
     width: 100%;
     height: 70px;
-    background-color: rgba(15, 23, 42, 0.8);
+    background-color: rgba(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,14 +9,16 @@
     z-index: 999;
   }
   .navbar-logo {
+    /*background-color: rgba(15, 23, 42, 0.8); does not apply the bg-color*/
     display: flex;
     align-items: center;
     gap: 0.5rem; /* Space between logo and text */
  }
 
   .navbar-logo-img {
-    width: 30px; /* Adjust the size of the logo */
-    height: 30px; /* Ensure the logo is square */
+
+    width: 70px; /* Adjust the size of the logo */
+    height: 70px; /* Ensure the logo is square */
     object-fit: contain; /* Maintain aspect ratio */
     
  }
@@ -30,6 +32,12 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
+    display: flex;
+  }
+
+  .company_name{
+    align-items: center;
+    padding-top: 10%;
   }
   
   .navbar-links {

@@ -24,7 +24,7 @@ const About = () => {
         </motion.div>
       </header>
 
-      <section className="about-mission">
+      {/*<section className="about-mission">*/}
         <div className="about-grid">
           <motion.div 
             className="about-image"
@@ -53,7 +53,7 @@ const About = () => {
             <p>Founded by a team of security experts and AI researchers, we bring together deep technical expertise with a profound understanding of the unique requirements of federal agencies and healthcare organizations.</p>
           </motion.div>
         </div>
-      </section>
+      {/*</section>*/}
 
       <section className="about-values">
         <motion.h2 
