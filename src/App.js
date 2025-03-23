@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
+import About from './pages/About';
 import HealthcareAI from './pages/HealthcareAI';
 import SalusIAM from './pages/SalusIAM';
 import Cybersecurity from './pages/Cybersecurity';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/salus-iam" element={<SalusIAM />} />
         <Route path="/cybersecurity" element={<Cybersecurity />} />
         <Route path="/solutions" element={<Solutions />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
