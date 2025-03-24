@@ -34,11 +34,10 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
           >
             
-            <div className="image-placeholder animated-bg">
+            <div className="about-image">
             <img 
               src="/logo_motion.gif" 
               alt="Animated representation" 
-              className="about-gif"
               />
               {/* <div className="floating-shape "></div>
               <div className="floating-shape "></div>
