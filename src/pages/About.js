@@ -18,13 +18,13 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1>About Sapiencia.AI</h1>
+          <h1>Pioneering AI-driven security solutions for healthcare and defense sectors</h1>
           <div className="separator"></div>
-          <p>Pioneering AI-driven security solutions for healthcare and defense sectors</p>
+          
         </motion.div>
       </header>
 
-      {/*<section className="about-mission">*/}
+      <section className="about-mission">
         <div className="about-grid">
           <motion.div 
             className="about-image"
@@ -33,13 +33,20 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: false, amount: 0.3 }}
           >
+            
             <div className="image-placeholder animated-bg">
-              <div className="floating-shape shape1"></div>
-              <div className="floating-shape shape2"></div>
-              <div className="floating-shape shape3"></div>
-            </div>
+            <img 
+              src="/logo_motion.gif" 
+              alt="Animated representation" 
+              className="about-gif"
+              />
+              {/* <div className="floating-shape "></div>
+              <div className="floating-shape "></div>
+              <div className="floating-shape "></div>*/}
+              </div> 
+             
           </motion.div>
-          
+         
           <motion.div 
             className="about-content"
             initial={{ opacity: 0, x: 50 }}
@@ -53,7 +60,7 @@ const About = () => {
             <p>Founded by a team of security experts and AI researchers, we bring together deep technical expertise with a profound understanding of the unique requirements of federal agencies and healthcare organizations.</p>
           </motion.div>
         </div>
-      {/*</section>*/}
+      </section>
 
       <section className="about-values">
         <motion.h2 
@@ -142,9 +149,9 @@ const About = () => {
             whileHover={{ y: -5 }}
           >
             <div className="member-photo"></div>
-            <h3>Dr. Alexandra Rivera</h3>
-            <p>Chief Executive Officer</p>
-            <span>Former DARPA Program Director with 15+ years in AI security research</span>
+            <h3>Dabis Camero</h3>
+            <p>Innovative Leader in AI/ML, Cybersecurity, and IAM Solutions </p>
+            <span>AI/ML and Cybersecurity expert specializing in IAM, IGA, and next-gen security solutions.</span>
           </motion.div>
           
           <motion.div 
@@ -156,9 +163,9 @@ const About = () => {
             whileHover={{ y: -5 }}
           >
             <div className="member-photo"></div>
-            <h3>Marcus Chen, PhD</h3>
-            <p>Chief Technology Officer</p>
-            <span>AI researcher and former healthcare security architect</span>
+            <h3>Dr. Jason Elroy Martis</h3>
+            <p>Associate Professor</p>
+            <span>Expert in Deep Learning, Computer Vision, and AI with 15+ years of research and teaching experience.</span>
           </motion.div>
           
           <motion.div 
@@ -170,9 +177,9 @@ const About = () => {
             whileHover={{ y: -5 }}
           >
             <div className="member-photo"></div>
-            <h3>Col. James Thompson (Ret.)</h3>
-            <p>Chief Strategy Officer</p>
-            <span>25 years military experience specializing in cybersecurity</span>
+            <h3>Dr. Sannidhan M S</h3>
+            <p>Associate Professor</p>
+            <span>Expert in Image Processing, Machine Learning, and Quantum AI, with a strong passion for research and teaching.</span>
           </motion.div>
         </div>
       </section>

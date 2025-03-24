@@ -22,9 +22,14 @@ const Footer = () => {
         </div>
         <div className="footer-contact">
           <h4>Contact</h4>
-          <p>federal@sapiencia.ai</p>
-          <p>+1 (800) 555-1234</p>
-          <p>1000 Defense Plaza, Suite 300, Arlington, VA 22209</p>
+         
+
+
+
+          <p>dabis.camero@sapiencia.ai</p>
+          <p>+1 (223) 225-0608</p>
+          <p> 1200 Market Street, Unit 17, PMB # 184, Lemoyne, Pennsylvania 17043, United States
+          </p>
         </div>
       </div>
       <div className="footer-bottom">
