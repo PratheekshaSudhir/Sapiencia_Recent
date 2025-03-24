@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import AnimatedBackground from '../components/AnimatedBackground';
 import './HealthcareAI.css';
 import { useState } from 'react';
+import { Clipboard, Briefcase, GraduationCap } from "lucide-react";
 import { ShieldCheck, Lock, Users } from "lucide-react";
 
 const solutions_health = [
@@ -137,7 +138,47 @@ const HealthcareAI = () => {
         </div>
       </div>
     </section>
-
+  
+      {/*section of joining the organinsation*/}
+      <section className="container">
+      <div className="card">
+        <div className='card-left'>
+        <h1 className="title">Ready to Transform Your Healthcare Organization?</h1>
+        <p className="description">
+          Join leading healthcare institutions that have already improved
+          patient outcomes and operational efficiency with our AI solutions.
+        </p>
+        <div className="buttons">
+          <button className="primary-button">Request a Demo</button>
+          <button className="secondary-button">Contact Sales</button>
+        </div>
+        </div>
+        
+        <div className="features">
+          <div className="feature-item">
+            <div className="icon-container-join"><Clipboard className="icon-join" /></div>
+            <div>
+              <h3 className="feature-title">Free ROI Assessment</h3>
+              <p className="feature-description">Get a customized analysis of potential savings</p>
+            </div>
+          </div>
+          <div className="feature-item">
+            <div className="icon-container-join"><Briefcase className="icon-join" /></div>
+            <div>
+              <h3 className="feature-title">90-Day Pilot Program</h3>
+              <p className="feature-description">Low-risk implementation with dedicated support</p>
+            </div>
+          </div>
+          <div className="feature-item">
+            <div className="icon-container-join"><GraduationCap className="icon-join" /></div>
+            <div>
+              <h3 className="feature-title">Educational Webinars</h3>
+              <p className="feature-description">Join our weekly sessions on healthcare AI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
       <Footer />
     </div>
