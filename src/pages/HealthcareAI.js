@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import AnimatedBackground from '../components/AnimatedBackground';
 import './HealthcareAI.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Clipboard, Briefcase, GraduationCap } from "lucide-react";
 import { ShieldCheck, Lock, Users } from "lucide-react";
 

@@ -43,6 +43,7 @@
   .navbar-links {
     display: flex;
     gap: 1.5rem;
+    font-weight: bold;
   }
   
   .navbar-links li a {

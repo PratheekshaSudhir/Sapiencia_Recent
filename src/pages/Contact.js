@@ -4,65 +4,121 @@ import Footer from '../components/Footer';
 import AnimatedBackground from '../components/AnimatedBackground';
 import './Contact.css';
 
-const Contact = () => {
+function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you could integrate with a backend or third-party form service
-    alert('Form submitted! We will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setSuccessMessage('');
+    setErrorMessage('');
+
+    const formDataToSend = new FormData();
+    formDataToSend.append('access_key', '71d45d6c-5f7c-4cdb-9e5d-137ad0689e93');
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('message', formData.message);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataToSend
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSuccessMessage('Your message has been sent successfully!');
+        setFormData({ name: '', email: '', message: '' }); // Reset form fields
+      } else {
+        setErrorMessage('Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      setErrorMessage('An error occurred while submitting the form.');
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
-    <div className="contact-container">
-      <AnimatedBackground />
+  <div className="contact">
       <Navbar />
-      <div className="contact-content">
-        <h1>Contact Us</h1>
-        <p>Request a demo, ask about federal contracts, or inquire about our AI solutions.</p>
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <label>Name</label>
-          <input
-            type="text"
-            name="name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-          />
+      <AnimatedBackground />
+    <div className="contact-page">
+      <div className="contact-card">
+        <div className="contact-info">
+          <h1 className="contact-title">Get in touch</h1>
+          <p className="contact-subtitle">
+            Request a demo, ask about federal contracts, or inquire about our AI solutions.
+          </p>
+        </div>
 
-          <label>Email</label>
-          <input
-            type="email"
-            name="email"
-            required
-            value={formData.email}
-            onChange={handleChange}
-          />
+        <form className="contact-form" onSubmit={onSubmit}>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
 
-          <label>Message</label>
-          <textarea
-            name="message"
-            rows="5"
-            required
-            value={formData.message}
-            onChange={handleChange}
-          />
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email address"
+              required
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
 
-          <button type="submit" className="cta-button">Send</button>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message"
+              rows={5}
+              required
+              value={formData.message}
+              onChange={handleChange}
+            />
+          </div>
+
+          {successMessage && <p className="success-message">{successMessage}</p>}
+          {errorMessage && <p className="error-message">{errorMessage}</p>}
+
+          <button type="submit" className="submit-button" disabled={isSubmitting}>
+            {isSubmitting ? 'Sending...' : 'Send Message'}
+          </button>
         </form>
-      </div>
-      <Footer />
+      </div>      
     </div>
+    <Footer/>
+  </div>  
   );
-};
+}
 
 export default Contact;
