@@ -216,7 +216,7 @@ const Home = () => {
             or healthcare organization.
           </p>
           <div className="final-cta-buttons">
-            <Link to="/contact" className="cta-button">Request Demo</Link>
+            <Link to="/contact" className="cta-button">Contact Sales</Link>
             <a href="/whitepaper.pdf" className="outline-button" target="_blank" rel="noopener noreferrer">
               Download Whitepaper
             </a>

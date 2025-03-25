@@ -15,7 +15,7 @@
     padding: 20px;
     border-radius: 10px;
     width: 600px;
-    height: 500px;
+    height: 550px;
     text-align: center;
     color: white;
   }
@@ -48,4 +48,16 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
+  select{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
   

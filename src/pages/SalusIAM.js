@@ -86,7 +86,7 @@ const SalusIAM = () => {
           infrastructure.
         </p>
         <div className="buttons">
-          <button className="demo-btn">Request Demo</button>
+          <button className="demo-btn">Contact Sales</button>
         </div>
       </div>
       <div className='salus-img-outer-container'>

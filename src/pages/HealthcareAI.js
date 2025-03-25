@@ -149,8 +149,7 @@ const HealthcareAI = () => {
           patient outcomes and operational efficiency with our AI solutions.
         </p>
         <div className="buttons">
-          <button className="primary-button">Request a Demo</button>
-          <button className="secondary-button">Contact Sales</button>
+          <button className="primary-button">Contact Sales</button>
         </div>
         </div>
         
