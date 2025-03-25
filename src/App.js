@@ -8,6 +8,7 @@ import SalusIAM from './pages/SalusIAM';
 import Cybersecurity from './pages/Cybersecurity';
 import Solutions from './pages/Solutions';
 import Contact from './pages/Contact';
+import Career from './pages/Career';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/careers" element={<Career />} />
       </Routes>
     </Router>
   );
