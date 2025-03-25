@@ -42,6 +42,8 @@ function Contact() {
 
       const result = await response.json();
       if (result.success) {
+        alert('Your message has been sent successfully!');
+        
         setSuccessMessage('Your message has been sent successfully!');
         setFormData({ name: '', email: '', message: '' }); // Reset form fields
       } else {

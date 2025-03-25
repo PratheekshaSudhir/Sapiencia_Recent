@@ -1,0 +1,51 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background: #1b2538;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    color: white;
+  }
+  
+  .modal-icon {
+    font-size: 2rem;
+    color: #4c7cf3;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    background: #4c7cf3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

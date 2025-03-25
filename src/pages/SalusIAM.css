@@ -1,26 +1,267 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/* Ensure the footer spans the full width */
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
 .salusiam-container {
     position: relative;
+    align-items: center;
     min-height: 100vh;
     padding-top: 5rem;
   }
   
-  .salusiam-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+  .salus-container {
+    display: flex;
+    gap:70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172a;
+    color: white;
+    padding: 60px;
+    border-radius: 10px;
+    max-width: 1200px;
   }
   
-  .salusiam-section {
-    margin-top: 2rem;
-    background-color: #1e293b;
+  .salus-text {
+    max-width: 70%;
+  }
+  
+  .salus-text h1 {
+    font-size: 66px;
+    font-weight: bold;
+  }
+  
+  .salus-text .highlight {
+    color: #3b82f6;
+  }
+  
+  .salus-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .salus-text p {
+    font-size: 16px;
+    color: #cbd5e1;
+    margin-top: 15px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .demo-btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
     border-radius: 8px;
-    padding: 1.5rem;
-    text-align: left;
-    transition: transform 0.3s ease;
+    cursor: pointer;
+    transition: 0.3s;
   }
   
-  .salusiam-section:hover {
-    transform: scale(1.02);
+  .demo-btn:hover {
+    background-color: #2563eb;
   }
+  .salus-img-outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .salus-image-container {
+    position: relative;
+    width: 650px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+  }
+  
+  .nested-div-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: #3875f7 0px 0px 10px; /* Optional shadow */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(109, 109, 222, 0.211); /* Optional background */
+  }
+  
+  .nested-div-2 {
+    width: 95%; /* Adjust size as needed */
+    height: 90%; /* Adjust size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0f172a; /* Optional background */
+    border-radius: 10px; /* Optional rounded corners */
+  }
+  
+  .salus-image {
+    width: 30%;
+    height: 80%;
+    z-index: 1; /* Ensure the image is above the backgrounds */
+  }
+
+  /*Salus features styling*/
+  .salus-features-container {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .salus-features-title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .salus-features-subtitle {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .salus-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .salus-feature-card {
+    display: flex;
+    align-items: center;
+    background: #1e293b;
+    box-shadow: #3b82f6 0px 0px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .salus-feature-card:hover {
+    transform: translateY(-5px);
+  }
+
+.salus-icon-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 15px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.salus-feature-icon {
+  font-size: 30px;
+  color: #3b82f6;
+}
+  .salus-feature-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .salus-feature-description {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-top: 5px;
+  }
+
+/*Technical Whitepaper styling*/
+.whitepapers-section {
+    text-align: center;
+    background: #0d1321;
+    color: #ffffff;
+    padding: 40px 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .whitepapers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .whitepaper-card {
+    background: #1b2538;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .whitepaper-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-container {
+    font-size: 3rem;
+    color: #4c7cf3;
+  }
+  
+  .whitepaper-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .whitepaper-description {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  
+  .download-btn {
+    background: #4c7cf3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .download-btn:hover {
+    background: #365dbf;
+  }
+  
+  .download-icon {
+    margin-right: 8px;
+  }
+  
   
