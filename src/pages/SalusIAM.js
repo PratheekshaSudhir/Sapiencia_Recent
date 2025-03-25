@@ -7,6 +7,7 @@ import './SalusIAM.css';
 import { useState } from 'react';
 import { FaFileAlt } from 'react-icons/fa';
 import DownLoadForm from '../components/DownLoadForm';
+import { Link } from 'react-router-dom';
 const features = [
   {
     icon: <FaShieldAlt className="salus-feature-icon" />,
@@ -86,7 +87,7 @@ const SalusIAM = () => {
           infrastructure.
         </p>
         <div className="buttons">
-          <button className="demo-btn">Contact Sales</button>
+          <Link to="/contact" className="demo-btn">Contact Sales</Link>
         </div>
       </div>
       <div className='salus-img-outer-container'>

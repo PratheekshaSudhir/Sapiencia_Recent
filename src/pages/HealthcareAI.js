@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import AnimatedBackground from '../components/AnimatedBackground';
 import './HealthcareAI.css';
+import { Link } from 'react-router-dom';
 // import { useState } from 'react';
 import { Clipboard, Briefcase, GraduationCap } from "lucide-react";
 import { ShieldCheck, Lock, Users } from "lucide-react";
@@ -149,7 +150,7 @@ const HealthcareAI = () => {
           patient outcomes and operational efficiency with our AI solutions.
         </p>
         <div className="buttons">
-          <button className="primary-button">Contact Sales</button>
+          <Link to="/contact" className="primary-button">Contact Sales</Link>
         </div>
         </div>
         
