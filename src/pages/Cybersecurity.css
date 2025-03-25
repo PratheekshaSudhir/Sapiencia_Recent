@@ -1,26 +1,107 @@
+/* Cybersecurity Section */
 .cybersecurity-container {
-    position: relative;
-    min-height: 100vh;
-    padding-top: 5rem;
+  background-color: #0b0f1d;
+  color: #ffffff;
+  text-align: center;
+}
+
+.cybersecurity-section {
+  padding: 60px 20px;
+}
+
+.cybersecurity-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.cybersecurity-description {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto 40px auto;
+  color: #b0b3b8;
+}
+
+.cybersecurity-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Cards Section */
+.cybersecurity-solutions-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cybersecurity-card {
+  background: #131a2b;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  height: auto;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cybersecurity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(255, 255, 255, 0.12);
+}
+
+.cybersecurity-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.cybersecurity-card p {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-bottom: 10px;
+}
+
+/* List Styling */
+.list-check {
+  padding: 0;
+  list-style: none;
+}
+
+.check-item {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #b0b3b8;
+}
+
+/* Icon Styling */
+.icon {
+  background: #1e293b;
+  display: inline-block;
+  width: 50px;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cybersecurity-title {
+    font-size: 2rem;
   }
-  
-  .cybersecurity-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+
+  .cybersecurity-subtitle {
+    font-size: 1.5rem;
   }
-  
-  .cybersecurity-section {
-    margin-top: 2rem;
-    background-color: #1e293b;
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-align: left;
-    transition: background-color 0.3s ease;
+
+  .cybersecurity-card {
+    width: 100%;
   }
-  
-  .cybersecurity-section:hover {
-    background-color: #2d3748;
-  }
-  
+}
