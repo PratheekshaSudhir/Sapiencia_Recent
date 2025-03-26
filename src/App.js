@@ -9,6 +9,7 @@ import Cybersecurity from './pages/Cybersecurity';
 import Solutions from './pages/Solutions';
 import Contact from './pages/Contact';
 import Career from './pages/Career';
+import Chatbot from './pages/Chatbot';
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/careers" element={<Career />} />
+        {/* <Route path="/chatbot" element={<Chatbot />} /> */}
       </Routes>
+      < Chatbot/>
     </Router>
   );
 }
