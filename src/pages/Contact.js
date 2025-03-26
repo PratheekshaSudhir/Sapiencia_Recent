@@ -29,7 +29,7 @@ function Contact() {
     setErrorMessage('');
 
     const formDataToSend = new FormData();
-    formDataToSend.append('access_key', '71d45d6c-5f7c-4cdb-9e5d-137ad0689e93');
+    formDataToSend.append('access_key', process.env.REACT_APP_ACCESS_KEY);
     formDataToSend.append('name', formData.name);
     formDataToSend.append('email', formData.email);
     formDataToSend.append('message', formData.message);
