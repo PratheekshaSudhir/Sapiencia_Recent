@@ -7,10 +7,10 @@ const Chatbot = () => {
   const [showChat, setShowChat] = useState(false);
 
   // Hugging Face API Key (Replace with your key)
-  const HF_API_KEY = "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";
+  const HF_API_KEY = "";
 
   // Hugging Face Model URL
-  const HF_MODEL_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3";
+  const HF_MODEL_URL = "";
 
   // Recommended Questions
   const recommendedQuestions = [
