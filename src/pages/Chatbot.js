@@ -6,12 +6,6 @@ const Chatbot = () => {
   const [input, setInput] = useState("");
   const [showChat, setShowChat] = useState(false);
 
-  // Hugging Face API Key (Replace with your key)
-  const HF_API_KEY = "";
-
-  // Hugging Face Model URL
-  const HF_MODEL_URL = "";
-
   // Recommended Questions
   const recommendedQuestions = [
     "What is Sapiencia.AI?",
@@ -41,29 +35,6 @@ const Chatbot = () => {
     "how to access request demo?": "You can request a demo on our website's 'Request Demo' page or contact us at demo@sapiencia.ai."
   };
 
-  // Check if the query is AI-related
-  const isAIQuestion = (message) => {
-    const aiKeywords = ["ai", "machine learning", "deep learning", "neural network", "nlp", "artificial intelligence"];
-    return aiKeywords.some(keyword => message.toLowerCase().includes(keyword));
-  };
-
-  // Fetch AI-related response from Hugging Face API
-  const fetchAIResponse = async (message) => {
-    try {
-      const response = await axios.post(HF_MODEL_URL, { inputs: message }, {
-        headers: {
-          "Authorization": `Bearer ${HF_API_KEY}`,
-          "Content-Type": "application/json"
-        }
-      });
-
-      return response.data[0]?.generated_text || "Sorry, I couldn't fetch an answer right now.";
-    } catch (error) {
-      console.error("Error fetching AI response:", error);
-      return "Sorry, there was an issue retrieving the response.";
-    }
-  };
-
   // Handle User Messages
   const sendMessage = async (message) => {
     if (!message.trim()) return;
@@ -73,19 +44,13 @@ const Chatbot = () => {
     setInput("");
   
     const lowerMessage = message.toLowerCase().trim();
-    let responseText = responses[lowerMessage];
-  
-    // If the message is not predefined, fetch a response from the Hugging Face API
-    if (!responseText) {
-      responseText = await fetchAIResponse(message);
-    }
+    let responseText = responses[lowerMessage] || "Sorry, I don't have an answer for that.";
   
     setMessages([...newMessages, { text: responseText, sender: "bot" }]);
   };
 
   return (
     <div>
-      {/* Floating Chat Button */}
       {!showChat && (
         <button
           onClick={() => setShowChat(true)}
@@ -106,7 +71,6 @@ const Chatbot = () => {
         </button>
       )}
 
-      {/* Chat Box */}
       {showChat && (
         <div
           style={{
@@ -122,7 +86,6 @@ const Chatbot = () => {
             zIndex: 1000,
           }}
         >
-          {/* Chat Header */}
           <div style={{ backgroundColor: "#3d5afe", padding: "10px", textAlign: "center" }}>
             Sapiencia.AI Chatbot
             <button
@@ -140,7 +103,6 @@ const Chatbot = () => {
             </button>
           </div>
 
-          {/* Recommended Questions */}
           <div style={{ padding: "10px", borderBottom: "1px solid #5a7bfc" }}>
             {recommendedQuestions.slice(0, 3).map((q, index) => (
               <button
@@ -162,7 +124,6 @@ const Chatbot = () => {
             ))}
           </div>
 
-          {/* Messages */}
           <div style={{ maxHeight: "300px", overflowY: "auto", padding: "10px" }}>
             {messages.map((msg, index) => (
               <div key={index} style={{ textAlign: msg.sender === "user" ? "right" : "left", marginBottom: "8px" }}>
@@ -173,7 +134,6 @@ const Chatbot = () => {
             ))}
           </div>
 
-          {/* Input Box */}
           <div style={{ display: "flex", padding: "10px", borderTop: "1px solid #5a7bfc" }}>
             <input type="text" value={input} onChange={(e) => setInput(e.target.value)} placeholder="Ask me something..." style={{ flex: 1, padding: "8px", backgroundColor: "#0a0a19", color: "white", border: "1px solid #5a7bfc" }} />
             <button onClick={() => sendMessage(input)} style={{ backgroundColor: "#3d5afe", color: "white", border: "none", padding: "8px 12px" }}>➡</button>
@@ -184,4 +144,4 @@ const Chatbot = () => {
   );
 };
 
-export default Chatbot ;
+export default Chatbot;
