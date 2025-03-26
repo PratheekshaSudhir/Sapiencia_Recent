@@ -32,7 +32,7 @@ const Footer = () => {
           <p> 1200 Market Street, Unit 17, PMB # 184, Lemoyne, Pennsylvania 17043, United States</p>
 
           {/* Social Icons Container */}
-        <div className="icon-container">
+        <div className="social-media-icon-container">
             <a href="#"><FaFacebookF className="w-5 h-5" /></a>
             <a href="#"><FaTwitter className="w-5 h-5" /></a>
             <a href="#"><FaGithub className="w-5 h-5" /></a>

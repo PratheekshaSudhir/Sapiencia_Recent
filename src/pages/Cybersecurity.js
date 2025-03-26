@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AnimatedBackground from "../components/AnimatedBackground";
 import "./Cybersecurity.css";
+import { FaCheck } from "react-icons/fa";
 
 const Cybersecurity = () => {
   return (
@@ -31,7 +32,7 @@ const Cybersecurity = () => {
               <ul className="list-check">
                 {service.points.map((point, idx) => (
                   <li key={idx} className="check-item">
-                    ✅ {point}
+                    <FaCheck className="cyber-check-icon" /> {point}
                   </li>
                 ))}
               </ul>

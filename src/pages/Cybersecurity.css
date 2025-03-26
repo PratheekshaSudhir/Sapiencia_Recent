@@ -33,7 +33,7 @@
 .cybersecurity-solutions-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap:4rem;
   flex-wrap: wrap;
 }
 
@@ -42,7 +42,7 @@
   color: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  width: 280px;
+  width: 350px;
   height: auto;
   text-align: left;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
@@ -81,15 +81,13 @@
 }
 
 /* Icon Styling */
-.icon {
-  background: #1e293b;
-  display: inline-block;
-  width: 50px;
-  padding: 10px;
-  border-radius: 50px;
-  font-size: 24px;
-  margin-bottom: 15px;
+.cyber-check-icon {
+  color: rgb(35, 35, 255); /* Set the icon color to blue */
+  margin-right: 8px; /* Add space between the icon and the text */
+  font-size: 16px; /* Adjust the size of the icon if needed */
+  vertical-align: middle; /* Align the icon vertically with the text */
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
