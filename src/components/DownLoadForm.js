@@ -237,7 +237,7 @@ body: JSON.stringify({ ...formData, whitepaperTitle }),
  });
 
  if (response.ok) {
-alert("Download link sent to your email!");
+alert("Thank you for submitting the form!");
 
 // Download the whitepaper file
 const fileUrl = `http://localhost:5000/download-whitepaper/${whitepaperTitle}`;
