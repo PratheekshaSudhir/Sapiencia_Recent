@@ -14,18 +14,24 @@
 }
 
 .cybersecurity-title {
-  font-size: 2.5rem;
+  font-size: 50px;
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 40px;
+  margin-bottom: 25px;
   text-align: center;
+  color: rgb(43, 43, 243);
 }
 
 .cybersecurity-description {
   font-size: 1.2rem;
   max-width: 650px;
-  margin: 0 auto 40px auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  
   color: #b0b3b8;
+  text-align: center;
 }
 
 .cybersecurity-subtitle {
@@ -108,4 +114,121 @@
   .cybersecurity-card {
     width: 100%;
   }
+}
+
+
+/*resources*/
+/* General Container */
+.cyber-resources-container {
+  background-color: #0d1224;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Section Title */
+.cyber-section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Cards Container */
+.cyber-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.cyber-card {
+  background-color: #162040;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cyber-card-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cyber-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cyber-card-description {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Buttons */
+.cyber-download-button,
+.cyber-request-button {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.cyber-request-button {
+  background-color: #2563eb;
+  margin-top: 40px;
+}
+
+.cyber-download-button:hover,
+.cyber-request-button:hover {
+  opacity: 0.9;
+}
+
+/* CTA Section */
+.cyber-cta-container {
+  background-color: #1a2d5d;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  
+}
+
+.cyber-cta-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.cyber-cta-description {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.cyber-cta-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.cyber-cta-button:hover {
+  opacity: 0.9;
+}
+.cyber-cta-request-demo{
+  margin-top: 40px;
+}
+
+.cyber-free-assessment-button{
+  margin-top: 30px;
 }

@@ -4,6 +4,7 @@ import AnimatedBackground from "../components/AnimatedBackground";
 import "./Cybersecurity.css";
 import Footer from "../components/Footer";
 import { FaCheck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Cybersecurity = () => {
   return (
@@ -41,6 +42,55 @@ const Cybersecurity = () => {
           ))}
         </div>
       </section>
+            {/* Resources & Offerings Section */}
+      <section className="cyber-resources-container">
+      <h2 className="cyber-section-title">Resources & Offerings</h2>
+
+      <div className="cyber-cards-container">
+        {/* Expert Whitepapers Card */}
+        <div className="cyber-card">
+          <div className="cyber-card-icon">
+            📄 {/* Replace with an actual icon if needed */}
+          </div>
+          <h3 className="cyber-card-title">Expert Whitepapers</h3>
+          <p className="cyber-card-description">
+            Access our detailed technical reports and guides on securing AI
+            systems and protecting against emerging threats in the AI security
+            landscape.
+          </p>
+          <button className="cyber-download-button">Download Whitepaper ⬇</button>
+        </div>
+
+        {/* Free Security Assessment Card */}
+        <div className="cyber-card">
+          <div className="cyber-card-icon">🛡️</div>
+          <h3 className="cyber-card-title">Free Security Assessment</h3>
+          <p className="cyber-card-description">
+            Request a preliminary security assessment of your AI infrastructure.
+            Our experts will identify potential vulnerabilities and provide
+            recommendations.
+          </p>
+          <div className="cyber-free-assessment-button">
+          <Link to="/contact" className="cyber-request-button">Request Free Assessment →</Link>
+          </div>
+          
+        </div>
+      </div>
+
+      {/* Call to Action */}
+      <div className="cyber-cta-container">
+        <h3 className="cyber-cta-title">Ready to Secure Your AI Systems?</h3>
+        <p className="cyber-cta-description">
+          Contact our team of AI security experts today to discuss your
+          specific security needs and discover how Sapiencia.AI can help
+          protect your most valuable AI assets.
+        </p>
+        <div className="cyber-cta-request-demo">
+        <Link to="/contact" className="cyber-cta-button">Request Demo →</Link>
+        </div>
+        
+      </div>
+    </section>
 
       <Footer />
     </div>
