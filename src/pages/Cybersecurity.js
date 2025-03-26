@@ -11,7 +11,7 @@ const Cybersecurity = () => {
       <Navbar />
       <AnimatedBackground />
 
-      <div className="cybersecurity-section">
+      <section className="cybersecurity-section">
         <h1 className="cybersecurity-title">
           Cybersecurity & AI System Security Services
         </h1>
@@ -20,7 +20,8 @@ const Cybersecurity = () => {
           cybersecurity solutions. We offer advanced services tailored to the
           unique challenges of securing AI-powered environments.
         </p>
-
+      </section>
+      <section>
         <h2 className="cybersecurity-subtitle">Our Core Security Services</h2>
 
         <div className="cybersecurity-solutions-container">
@@ -39,7 +40,7 @@ const Cybersecurity = () => {
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
       <Footer />
     </div>
