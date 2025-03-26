@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import AnimatedBackground from "../components/AnimatedBackground";
 import "./Cybersecurity.css";
+import Footer from "../components/Footer";
 import { FaCheck } from "react-icons/fa";
 
 const Cybersecurity = () => {
