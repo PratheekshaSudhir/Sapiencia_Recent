@@ -150,7 +150,7 @@ const About = () => {
             <div className="member-photo"></div>
             <h3>Dabis Camero</h3>
             <p>Innovative Leader in AI/ML, Cybersecurity, and IAM Solutions </p>
-            <span>AI/ML and Cybersecurity expert specializing in IAM, IGA, and next-gen security solutions.</span>
+            <span>AI/ML and Cybersecurity expert specializing in IAM, IGA, and next-gen security solutions</span>
           </motion.div>
           
           <motion.div 
@@ -164,7 +164,7 @@ const About = () => {
             <div className="member-photo"></div>
             <h3>Dr. Jason Elroy Martis</h3>
             <p>Associate Professor</p>
-            <span>Expert in Deep Learning, Computer Vision, and AI with 15+ years of research and teaching experience.</span>
+            <span>Expert in Deep Learning, Computer Vision, and AI with 15+ years of research and teaching experience</span>
           </motion.div>
           
           <motion.div 
@@ -178,7 +178,21 @@ const About = () => {
             <div className="member-photo"></div>
             <h3>Dr. Sannidhan M S</h3>
             <p>Associate Professor</p>
-            <span>Expert in Image Processing, Machine Learning, and Quantum AI, with a strong passion for research and teaching.</span>
+            <span>Expert in Image Processing, Machine Learning, and Quantum AI, with a strong passion for research and teaching</span>
+          </motion.div>
+
+          <motion.div 
+            className="team-member"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: false, amount: 0.3 }}
+            whileHover={{ y: -5 }}
+          >
+            <div className="member-photo"></div>
+            <h3>Peter Kuchnia</h3>
+            <p>Director of Cybersecurity | Cyber Risk Management & Resilience | Cyber Strategic Advisor</p>
+            <span>Cybersecurity expert helping businesses stay secure with IAM, risk management, and cyber resilience</span>
           </motion.div>
         </div>
       </section>
