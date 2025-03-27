@@ -1,3 +1,74 @@
+# Sapiencia_Recent
+
+## How to Clone and Run the Project
+
+### Prerequisites
+Ensure you have the following installed before proceeding:
+- **Node.js** (Download from [here](https://nodejs.org/))
+- **npm** (Comes with Node.js)
+
+Additionally, install the required dependencies:
+```sh
+npm install react-select react-icons
+```
+
+### Steps to Clone and Execute
+
+1. **Clone the repository**
+   ```sh
+   git clone <repository-url>
+   ```
+2. **Navigate to the project directory**
+   ```sh
+   cd Sapiencia_Recent
+   ```
+3. **Start the React frontend**
+   ```sh
+   npm start
+   ```
+   - The app will run at [http://localhost:3000](http://localhost:3000).
+   - The page will reload on changes.
+
+4. **Open a new terminal**
+5. **Navigate to the backend directory**
+   ```sh
+   cd backend
+   ```
+6. **Start the backend server**
+   ```sh
+   node server.js
+   ```
+
+## Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+Runs the app in development mode.
+
+### `npm test`
+Launches the test runner in interactive watch mode.
+
+### `npm run build`
+Builds the app for production and optimizes performance.
+
+### `npm run eject`
+Removes the single build dependency if customization is needed. **Use with caution!**
+
+For more details, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+## Additional Resources
+- [React Documentation](https://reactjs.org/)
+- [Deployment Guide](https://facebook.github.io/create-react-app/docs/deployment)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
