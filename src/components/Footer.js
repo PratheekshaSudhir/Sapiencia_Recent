@@ -28,7 +28,10 @@ const Footer = () => {
         <div className="footer-contact">
           <h4>Contact</h4>
           <p>dabis.camero@sapiencia.ai</p>
+          <p>india.operations@sapiencia.ai</p>
           <p>+1 (223) 225-0608</p>
+          <p>+91 9742087185</p>
+          <p>+91 9611763148</p>
           <p> 1200 Market Street, Unit 17, PMB # 184, Lemoyne, Pennsylvania 17043, United States</p>
 
           {/* Social Icons Container */}

@@ -29,7 +29,7 @@ const ExploreCareers = () => {
         <section className="careers-list">
           <div className="careers-grid">
             {[
-              { title: "Software Engineer", desc: "Build and maintain cutting-edge applications." },
+              { title: "DevOps Engineer", desc: "Seamless collaboration between software development and IT operations." },
               { title: "UI/UX Designer", desc: "Design seamless user experiences and stunning visuals." },
               { title: "Data Scientist", desc: "Leverage AI and big data to drive insights." },
               { title: "Marketing Specialist", desc: "Create impactful campaigns to grow our brand." }

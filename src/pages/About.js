@@ -157,6 +157,20 @@ const About = () => {
             className="team-member"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: false, amount: 0.3 }}
+            whileHover={{ y: -5 }}
+          >
+            <div className="member-photo"></div>
+            <h3>Peter Kuchnia</h3>
+            <p>Director of Cybersecurity | Cyber Risk Management & Resilience | Cyber Strategic Advisor</p>
+            <span>Cybersecurity expert helping businesses stay secure with IAM, risk management, and cyber resilience</span>
+          </motion.div>
+
+          <motion.div 
+            className="team-member"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: false, amount: 0.3 }}
             whileHover={{ y: -5 }}
@@ -181,19 +195,7 @@ const About = () => {
             <span>Expert in Image Processing, Machine Learning, and Quantum AI, with a strong passion for research and teaching</span>
           </motion.div>
 
-          <motion.div 
-            className="team-member"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: false, amount: 0.3 }}
-            whileHover={{ y: -5 }}
-          >
-            <div className="member-photo"></div>
-            <h3>Peter Kuchnia</h3>
-            <p>Director of Cybersecurity | Cyber Risk Management & Resilience | Cyber Strategic Advisor</p>
-            <span>Cybersecurity expert helping businesses stay secure with IAM, risk management, and cyber resilience</span>
-          </motion.div>
+          
         </div>
       </section>
 
