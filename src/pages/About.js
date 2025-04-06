@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import AnimatedBackground from '../components/AnimatedBackground';
 import { motion } from 'framer-motion';
 import './About.css';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -282,8 +283,8 @@ const About = () => {
           <h2>Join Us in Our Mission</h2>
           <p>Whether you're looking to secure your healthcare data, enhance defense operations, or join our team, we invite you to be part of our journey toward a more secure future.</p>
           <div className="cta-buttons">
-            <a href="/contact" className="cta-button">Contact Us</a>
-            <a href="/careers" className="outline-button">Explore Careers</a>
+            <Link to="/contact" className="cta-button">Contact Us</Link>
+            <Link to="/careers" className="outline-button">Explore Careers</Link>
           </div>
         </motion.div>
       </section>
