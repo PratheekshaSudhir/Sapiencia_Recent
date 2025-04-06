@@ -42,24 +42,24 @@ const Home = () => {
             >
                 NIST 800-53
             </motion.span>
-            <motion.span
+            {/* <motion.span
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
             >
                 IL5/IL6
-            </motion.span>
+            </motion.span> */}
             <motion.span
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
             >
                 HIPAA
             </motion.span>
-            <motion.span
+            {/* <motion.span
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
             >
                 FedRAMP
-            </motion.span>
+            </motion.span> */}
           </div>
         </motion.div>
       </header>
@@ -189,10 +189,10 @@ const Home = () => {
           <div className="standards-list">
             <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>DISA STIG</motion.span>
             <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>NIST 800-53</motion.span>
-            <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>IL5/IL6</motion.span>
+            {/* <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>IL5/IL6</motion.span> */}
             <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>HIPAA</motion.span>
-            <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>FedRAMP</motion.span>
-            <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>CMMC</motion.span>
+            {/* <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>FedRAMP</motion.span> */}
+            {/* <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>CMMC</motion.span> */}
             <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>Section 508</motion.span>
             <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>FIPS 140-2</motion.span>
             <motion.span whileHover={{ scale: 1.1, y: -5 }} transition={{ duration: 0.3 }}>CSF</motion.span>
