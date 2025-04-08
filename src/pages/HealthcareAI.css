@@ -313,3 +313,82 @@
   font-size: 14px;
   color: #555;
 }
+
+
+/* Add responsiveness for the container section */
+/* Add responsiveness for the container section */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card-left .title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .card-left .description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    margin-bottom: 20px;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0 10px; /* Add padding to prevent content from touching screen edges */
+  }
+
+  .feature-item {
+    display: flex;
+    flex-direction: row; /* Ensure icons and text are aligned horizontally */
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 100%; /* Make feature items take full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon-container-join {
+    margin-right: 12px;
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+  }
+
+  .icon-join {
+    color: #2563eb;
+    width: 24px;
+    height: 24px;
+  }
+
+  .feature-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+  }
+
+  .feature-description {
+    font-size: 0.9rem;
+    color: #555;
+  }
+}

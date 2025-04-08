@@ -326,6 +326,19 @@
     padding: 1rem;
   }
   
+  /*media query for team-grid*/
+  @media (max-width: 768px) {
+    .team-grid {
+      flex-direction: column; /* Stack team cards vertically */
+      align-items: center; /* Center the cards */
+      gap: 1.5rem; /* Add spacing between cards */
+    }
+  
+    .team-member {
+      width: 100%; /* Ensure cards take full width on smaller screens */
+      max-width: 400px; /* Optional: Limit the width of each card */
+    }
+  }
   .team-member {
     background-color: rgba(30, 41, 59, 0.7);
     border-radius: 12px;

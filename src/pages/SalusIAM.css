@@ -30,6 +30,7 @@ footer {
     padding: 60px;
     border-radius: 10px;
     max-width: 1200px;
+    margin: 0 auto;
   }
   
   .salus-text {
@@ -116,6 +117,50 @@ footer {
     width: 30%;
     height: 80%;
     z-index: 1; /* Ensure the image is above the backgrounds */
+  }
+/*media query for smaller screens*/
+  @media (max-width: 768px) {
+    .salus-container {
+      flex-direction: column; /* Stack content and image vertically */
+      padding: 20px; /* Reduce padding for smaller screens */
+      gap: 20px; /* Adjust spacing between content and image */
+    }
+  
+    .salus-text {
+      max-width: 100%; /* Allow the text to take full width */
+      text-align: center; /* Center-align the text for better readability */
+    }
+  
+    .salus-text h1 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+  
+    .salus-text h2 {
+      font-size: 1.5rem; /* Adjust subheading size */
+    }
+  
+    .salus-text p {
+      font-size: 1rem; /* Adjust paragraph size */
+    }
+  
+    .salus-img-outer-container {
+      justify-content: center; /* Center the image */
+      align-items: center;
+    }
+  
+    .salus-image-container {
+      width: 100%; /* Make the image container take full width */
+      height: auto; /* Adjust height automatically */
+      display: flex; /* Ensure the container is displayed */
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+    }
+  
+    .salus-image {
+      width: 80%; /* Scale the image to fit within the container */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Ensure the image is displayed */
+    }
   }
 
   /*Salus features styling*/
