@@ -86,6 +86,7 @@ const Home = () => {
             >
               <h3>Healthcare AI Solutions</h3>
               <p>AI-driven medical imaging, predictive analytics, and secure data platforms for healthcare providers handling sensitive patient information.</p>
+              <Link to="/healthcare-ai" className="learn-more-button">Learn More</Link>
             </motion.div>
 
             <motion.div
@@ -94,6 +95,7 @@ const Home = () => {
             >
               <h3>Salus IAM for DoD</h3>
               <p>Zero Trust identity &amp; access management for tactical edge deployments with military-grade encryption and secure authentication.</p>
+              <Link to="/salus-iam" className="learn-more-button">Learn More</Link>
             </motion.div>
 
             <motion.div
@@ -102,6 +104,7 @@ const Home = () => {
             >
               <h3>Cybersecurity &amp; AI Security</h3>
               <p>Comprehensive penetration testing, AI-driven threat detection, and compliance audits for federal and healthcare systems.</p>
+              <Link to="/cybersecurity" className="learn-more-button">Learn More</Link>
             </motion.div>
           </div>
         </motion.div>
@@ -217,9 +220,9 @@ const Home = () => {
           </p>
           <div className="final-cta-buttons">
             <Link to="/contact" className="cta-button">Contact Sales</Link>
-            <a href="/whitepaper.pdf" className="outline-button" target="_blank" rel="noopener noreferrer">
+            {/* <a href="/whitepaper.pdf" className="outline-button" target="_blank" rel="noopener noreferrer">
               Download Whitepaper
-            </a>
+            </a> */}
           </div>
         </motion.div>
       </section>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import { FaFacebookF, FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -28,17 +29,15 @@ const Footer = () => {
         <div className="footer-contact">
           <h4>Contact</h4>
           <p>dabis.camero@sapiencia.ai</p>
-          <p>india.operations@sapiencia.ai</p>
+          <p>operations@sapiencia.ai</p>
           <p>+1 (223) 225-0608</p>
-          <p>+91 9742087185</p>
-          <p>+91 9611763148</p>
           <p> 1200 Market Street, Unit 17, PMB # 184, Lemoyne, Pennsylvania 17043, United States</p>
 
           {/* Social Icons Container */}
         <div className="social-media-icon-container">
-            <a href="#"><FaFacebookF className="w-5 h-5" /></a>
-            <a href="#"><FaTwitter className="w-5 h-5" /></a>
-            <a href="#"><FaGithub className="w-5 h-5" /></a>
+            <a href="https://www.facebook.com/sapiencia.artificial.intelligence"><FaFacebookF className="w-5 h-5" /></a>
+            <a href="#"><img src="/logo-white.png" alt='X-icon' className='xicon-logo'></img></a>
+            <a href="https://github.com/dcsapienciaai/Sapiencia.AI"><FaLinkedin className="w-5 h-5" /></a>
             <a href="#"><FaInstagram className="w-5 h-5" /></a>
           </div>
 

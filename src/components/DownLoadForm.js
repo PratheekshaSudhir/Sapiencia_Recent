@@ -230,7 +230,7 @@ return;
  }
 
  // Send user details to backend
- const response = await fetch("http://localhost:5000/submit-form", {
+ const response = await fetch("https://sapiencia.ai/api/submit-form.php", {
 method: "POST",
 headers: { "Content-Type": "application/json" },
 body: JSON.stringify({ ...formData, whitepaperTitle }),
@@ -240,7 +240,7 @@ body: JSON.stringify({ ...formData, whitepaperTitle }),
 alert("Thank you for submitting the form!");
 
 // Download the whitepaper file
-const fileUrl = `http://localhost:5000/download-whitepaper/${whitepaperTitle}`;
+const fileUrl = `http://sapiencia.ai/whitepapers/${whitepaperTitle}.pdf`;
 const link = document.createElement("a");
 link.href = fileUrl;
 link.setAttribute("download", `${whitepaperTitle}.pdf`);
